@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Moorhuhn</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:900&display=swap" rel="stylesheet">
+    <style>
+      canvas {
+        cursor: url('images/cursor.png') 35 35, pointer;
+        margin: auto;
+        display: block;
+      }
+      h1 {
+        font-size: 26px;
+        font-family: 'Source Code Pro', monospace;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    </style>
+    <script src="js/duck.js"></script>
+    <script src="js/resourceManager.js"></script>
+    <script src=js/sounds.js></script>
+    <script src="js/eventListener.js"></script>
+    <script src="js/gameOver.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/instruction.js"></script>
+    <script src="js/game.js"></script>
+    <!--<script src="js/moveDuck.js"></script>-->
+  </head>
+  <body>
+    <h1>Moorhuhn</h1>
+    <p>
+      <canvas id="canvas" width="1300" height="450">No canvas</canvas>
+    </p>
+
+    <script type="text/javascript">
+      var play = false;
+      var playSound = true;
+      const menu = new Menu();
+      menu.start();
+    </script>
+  </body>
+</html>
